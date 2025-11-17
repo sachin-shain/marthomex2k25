@@ -1,0 +1,6 @@
+  background-color: rgb(210, 209, 214);
+    /* Futuristic light gradient background */
+  background: linear-gradient(135deg, #e50f19, #c4da19, #0589e8);
+  /* Optional polish */
+  box-shadow: 0 40px 12px rgb(215, 209, 209);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
