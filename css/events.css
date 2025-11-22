@@ -1,6 +1,6 @@
 .events-format,
 #registration_competition,
-#registration_school {
+#registration_school , #registration_interaction{
     width: 75%;
     max-width: 90%;
 }
@@ -235,7 +235,7 @@
 
 .btn-row .reg-btn,
 .btn-row .rules-btn,
-#registration_school #school-reg-btn {
+#registration_school #school-reg-btn,#registration_interaction #interaction-reg-btn {
     display: inline-block;
     background: #1d6dd5;
     color: white;
@@ -248,7 +248,7 @@
 }
 
 .btn-row .reg-btn:hover,
-#registration_school #school-reg-btn:hover {
+#registration_school #school-reg-btn:hover,#registration_interaction #interaction-reg-btn:hover {
     background: #1556ac;
     transform: scale(1.05);
 }
@@ -274,7 +274,7 @@
 
     .btn-row .reg-btn,
     .btn-row .rules-btn,
-    #registration_school #school-reg-btn {
+    #registration_school #school-reg-btn,#registration_interaction #interaction-reg-btn {
         padding: 10px 15px;
         font-size: .9rem;
         margin: 5px;
