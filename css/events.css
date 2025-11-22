@@ -1,0 +1,456 @@
+.events-format,
+#registration_competition,
+#registration_school {
+    width: 75%;
+    max-width: 90%;
+}
+
+/* Event Card: stack text and image vertically */
+.event-card-program,
+.event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffffdd;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 25px auto;
+    width: 85%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.27);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.event-card-program .event-info {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+
+.event-card-program .event-image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.event-card-program .event-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.details {
+    font-size: 0.95rem;
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#valedictory-image {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+}
+
+/* Event Card: competition */
+.event-card {
+    flex-direction: row;
+}
+
+.event-card-program:hover,
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.48);
+}
+
+.event-card .event-info {
+    flex: 3;
+    padding-right: 20px;
+}
+
+.event-card .event-image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.event-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+
+.event-info .event_heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.event-info h2,
+.event-info .event_heading h2 {
+    font-size: 1.8rem;
+    color: #004aad;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.event-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+/* Schedule row */
+.details {
+    font-size: 0.95rem;
+    background: #f1f1f1;
+    padding: 8px 12px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Prizes Row */
+.event-card .prizes {
+    margin-top: 15px;
+    padding: 15px 20px;
+
+    background: linear-gradient(90deg, #ffe08a, #ffd046, #ffca2c);
+    border-radius: 12px;
+
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #4a3600;
+
+    display: inline-block;
+    letter-spacing: 0.6px;
+
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.45);
+    transform: scale(1);
+    transition: 0.25s ease-in-out;
+}
+
+
+/* Image Section */
+.event-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.event-card .deadline {
+    margin-top: 15px;
+    padding: 15px 20px;
+
+    background-color: rgb(78, 190, 110);
+    color: rgb(25, 25, 25);
+    border-radius: 12px;
+
+    font-weight: 650;
+    font-size: 1.1rem;
+
+    display: inline-block;
+    letter-spacing: 0.6px;
+
+    /* box-shadow: 0 4px 12px rgba(255, 193, 7, 0.45); */
+    transform: scale(1);
+    transition: 0.25s ease-in-out;
+}
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    .events-format,
+    #registration_competition,
+    #registration_school {
+        max-width: 100%;
+        width: 98%;
+        margin: 20px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .event-info h2,
+    .event-info .event_heading h2 {
+        font-size: 1.2rem;
+    }
+
+    .event-info p {
+        font-size: .8rem;
+    }
+
+    .event-card {
+        flex-direction: column;
+    }
+
+    .details {
+        text-align: center;
+        line-height: 1.4;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .event-card-program .event-image img,
+    .event-card .event-image img {
+        width: 50%;
+        height: auto;
+    }
+
+    .event-card .prizes,
+    .event-card .deadline {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.4;
+        margin: 5px auto;
+        width: 95%;
+    }
+
+    .event-card .deadline {
+        font-size: .8rem;
+    }
+}
+
+
+.btn-row {
+    display: flex;
+    gap: 90px;
+    /* Space between Register and Rules */
+    margin-top: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+.btn-row .reg-btn,
+.btn-row .rules-btn,
+#registration_school #school-reg-btn {
+    display: inline-block;
+    background: #1d6dd5;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-row .reg-btn:hover,
+#registration_school #school-reg-btn:hover {
+    background: #1556ac;
+    transform: scale(1.05);
+}
+
+
+.btn-row .rules-btn {
+    background: #FF6C0C;
+}
+
+.btn-row .rules-btn:hover {
+    background: #BF1A1A;
+    transform: scale(1.05);
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    .btn-row {
+        margin-top: 15px;
+    }
+
+
+    .btn-row .reg-btn,
+    .btn-row .rules-btn,
+    #registration_school #school-reg-btn {
+        padding: 10px 15px;
+        font-size: .9rem;
+        margin: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+    width: 50%;
+}
+
+
+.faculty-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faculty-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #cddccc;
+    font-size: 1.2rem;
+}
+
+.faculty-list li:last-child {
+    border-bottom: none;
+}
+
+.faculty-list .name {
+    font-weight: 600;
+}
+
+.faculty-list .phone {
+    font-size: 1.2rem;
+    font-family: monospace;
+    color: #004d26;
+}
+
+
+.sponsor-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 30px;
+    /* flex-wrap: wrap; */
+    /* allows wrapping */
+    /* gap: 5%; */
+    /* spacing between logos */
+    /* padding: 10px 0; */
+    /* margin: 0; */
+    /* margin-bottom: 0; */
+}
+
+.sponsor-images img {
+    /* height: 15vh; */
+    /* good readable size */
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: -10px;
+}
+
+.partner-row {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.partner-row>section {
+    flex: 1;
+    /* makes both sections equal width */
+    display: flex;
+    /* lets height stretch automatically */
+}
+
+
+.sponsor-images {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.sponsor-images img {
+    height: 100px;
+    width: auto;
+}
+
+.partner-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    /* IMPORTANT — makes all children equal height */
+}
+
+.partner-row .events-format {
+    flex: 1;
+    /* both take equal width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* optional but keeps spacing neat */
+    /* background: rgba(255, 255, 255, 0.05); */
+    padding: 0px;
+    border-radius: 10px;
+    background: #ffffffdd;
+}
+
+#media_partner {
+    margin: auto
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+    body#contacts section {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: 20px auto !important;
+        padding: 0 10px;
+    }
+
+    .faculty-list li,
+    .faculty-list li .phone {
+        font-size: .8rem;
+    }
+
+
+}
