@@ -1,0 +1,322 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* always show scrollbar thumb */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ======== Global Page Background ======== */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url("../images/page_background.png");
+    color: white;
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ======== header ======== */
+header.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: rgb(6, 23, 31);
+    color: white;
+}
+
+/*========== header: main =========*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 1.6rem;
+    margin: 0;
+    line-height: 1.0;
+}
+
+.subpage img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+/*========== Navigation =========*/
+
+/* aligns on right */
+
+.nav_main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_main a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav_main a:hover {
+    color: #d97130;
+    text-decoration: underline;
+}
+
+#marthomex_top_heading {
+    width: 100px;
+    height: auto;
+}
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    header.main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 110px;
+        /* smaller logo */
+    }
+
+    #marthomex_top_heading {
+        width: 90px;
+        height: auto;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+        max-width: 240px;
+        /* prevent overflow */
+    }
+
+    .nav_main {
+        margin-top: 10px;
+        gap: 10px;
+        /* flex-direction: column; */
+        /* vertical nav for mobile */
+        width: 100%;
+    }
+
+    .nav_main a {
+        margin: 6px 0;
+        font-size: .8rem;
+    }
+
+    .subpage {
+        width: 110px;
+    }
+}
+
+
+/*========== Section =========*/
+
+section {
+    text-align: center;
+    width: 50%;
+    max-width: 90%;
+    background-color: rgb(247 241 222);
+    color: black;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 25, 0.6);
+    padding: 0 30px 30px 30px;
+    overflow: hidden;
+}
+
+/*========== Section: heading =========*/
+section h1 {
+    margin: 0;
+    padding: 15px 30px;
+    background-color: rgba(13, 17, 137, 0.85);
+    color: #00FFFF;
+    font-family: 'ChopinScript', cursive;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+/*========== Section: paragraph =========*/
+section p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    section {
+        margin: 30px auto;
+        padding: 0 15px 15px 15px;
+        max-width: 80%;
+        width: 90%;
+    }
+
+    section h1 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+}
+
+/*========== footer =========*/
+
+footer {
+    background-color: rgb(6, 23, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+
+footer .logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+footer .logo h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+footer a:visited {
+    color: white;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffd700;
+}
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    footer .logo h1,
+    footer .logo a {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+
+
+}
+
+
+
+.homepage-reg-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0077ff;
+    /* blue */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* smooth animation */
+}
+
+.homepage-reg-btn:hover {
+    background: #32639a;
+    transform: scale(1.06);
+}
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+    .homepage-reg-btn {
+        display: inline-block;
+        padding: 5px 15px;
+        background: #0077ff;
+        /* blue */
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        /* smooth animation */
+    }
+}
+
+
+
+
+
+/* Top Button Container */
+#top-buttons {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Buttons */
+.top-btn {
+    background: linear-gradient(135deg, #004aad, #0073ff);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: 0.25s ease-in-out;
+}
+
+.top-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}

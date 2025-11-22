@@ -1,0 +1,575 @@
+/* =================================================
+                  Index
+   =================================================*/
+
+
+
+/*========== registration ribbon =========*/
+
+#event-ribbon {
+    width: 100%;
+    max-width: 100%;
+    overflow: visible;
+    background: #ffffffaa;
+    padding: 20px;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+    border-top: 4px solid #ad0000;
+    border-bottom: 4px solid #ad0000;
+    border-radius: 0px;
+}
+
+
+
+#event-ribbon h1 {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 25, 0.6);
+    background-color: rgba(38, 99, 16, 0.85);
+    text-align: center;
+
+}
+
+
+
+#event-ribbon .ribbon-container {
+    width: 100%;
+    overflow: visible !important;
+    position: relative;
+}
+
+#event-ribbon .ribbon-track {
+    display: flex;
+    gap: 1%;
+    animation: scrollRibbon 10s linear infinite;
+    overflow: visible;
+}
+
+#event-ribbon .ribbon-track img {
+    height: 20vh;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.323);
+    transition: transform 0.1s;
+    position: relative;
+    z-index: 5;
+}
+
+
+
+/* Slow Image Hover Zoom */
+#event-ribbon .ribbon-track img:hover {
+    transform: scale(1.08);
+}
+
+/* Animation */
+@keyframes scrollRibbon {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* PAUSE SCROLL ON HOVER */
+#event-ribbon .ribbon-track:hover {
+    animation-play-state: paused;
+}
+
+
+#event-ribbon .event-box {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+
+#event-ribbon .event-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+#event-ribbon .event-image {
+    width: 10%;
+    height: 180px;
+    object-fit: cover;
+    /* keeps correct aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#event-ribbon .event-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #33A1E0;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+#event-ribbon .event-btn:hover {
+    background-color: #0046FF;
+    transform: scale(1.05);
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+    #event-ribbon {
+        border-top: 2px solid #ad0000;
+        border-bottom: 2px solid #ad0000;
+    }
+
+    #event-ribbon h1 {
+        width: 70%;
+    }
+
+    #event-ribbon .ribbon-track {
+        margin-top: 10px;
+    }
+
+    #event-ribbon .ribbon-track img {
+        height: 100px;
+        width: auto;
+    }
+
+    #event-ribbon .event-box {
+        width: 70%;
+        padding: 10px;
+        margin: 5px auto;
+    }
+
+
+    #event-ribbon .event-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    #event-ribbon .event-image {
+        width: 10%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    #event-ribbon .event-btn {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+}
+
+
+
+/*========== Highlight reels =========*/
+
+
+/*========== box container =========*/
+.three-box {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    background: transparent;
+    align-items: center;
+}
+
+
+.s1 {
+    flex: .8;
+}
+
+.s2 {
+    flex: .5;
+}
+
+.s3 {
+    flex: 1;
+}
+
+.box {
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+
+
+
+/*========== Events reels =========*/
+
+#event_highlight {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#stall_highlight {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+#event_highlight h1,
+#stall_highlight h1 {
+    max-width: 98%;
+    width: 100%;
+    color: #00FFFF;
+    font-family: 'ChopinScript', cursive;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(255, 255, 25, 0.6);
+    background-color: rgba(38, 99, 16, 0.85);
+    text-align: center;
+
+}
+
+
+.fade {
+    margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.event {
+    aspect-ratio: 19/16;
+}
+
+.stall {
+    aspect-ratio: 4/3;
+}
+
+.event .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: fadeSlide_event 21s infinite;
+    animation-delay: calc(var(--i) * 3s);
+}
+
+.stall .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: fadeSlide_stall 30s infinite;
+    animation-delay: calc(var(--i) * 3s);
+}
+
+/* Landscape images */
+.event .slide img,
+.stall .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid rgb(22, 36, 44);
+}
+
+/* Portrait slide — 2 images side-by-side */
+.event .slide.portrait-set {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.event .slide.portrait-set img {
+    width: 50%;
+    height: auto;
+    /* object-fit:  */
+    border-radius: 10px;
+    border: 4px solid rgb(22, 36, 44);
+}
+
+
+/* Fade keyframes */
+@keyframes fadeSlide_event {
+    0% {
+        opacity: 0;
+    }
+
+    4.76% {
+        opacity: 1;
+    }
+
+    14.29% {
+        opacity: 1;
+    }
+
+    19.05% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+@keyframes fadeSlide_stall {
+    0% {
+        opacity: 0;
+    }
+
+    3.33% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    13.33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Assign delay to each slide */
+.event .slide:nth-child(1),
+.stall .slide:nth-child(1) {
+    --i: 0;
+}
+
+.event .slide:nth-child(2),
+.stall .slide:nth-child(2) {
+    --i: 1;
+}
+
+.event .slide:nth-child(3),
+.stall .slide:nth-child(3) {
+    --i: 2;
+}
+
+.event .slide:nth-child(4),
+.stall .slide:nth-child(4) {
+    --i: 3;
+}
+
+.event .slide:nth-child(5),
+.stall .slide:nth-child(5) {
+    --i: 4;
+}
+
+.event .slide:nth-child(6),
+.stall .slide:nth-child(6) {
+    --i: 5;
+}
+
+.event .slide:nth-child(7),
+.stall .slide:nth-child(7) {
+    --i: 6;
+}
+
+.stall .slide:nth-child(8) {
+    --i: 7;
+}
+
+.stall .slide:nth-child(9) {
+    --i: 8;
+}
+
+.stall .slide:nth-child(10) {
+    --i: 9;
+}
+
+
+#welcome {
+    max-width: 85%;
+    width: 100%;
+    margin: auto;
+    margin-left: 5%;
+}
+
+
+.homepage-reg-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0077ff;
+    /* blue */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* smooth animation */
+}
+
+.homepage-reg-btn:hover {
+    background: #32639a;
+    transform: scale(1.06);
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+    .three-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: transparent;
+        align-items: center;
+    }
+
+
+    .s1 {
+
+        width: 90%;
+    }
+
+    .s2 {
+        width: 90%;
+    }
+
+    .s3 {
+        width: 90%;
+    }
+
+    .box {
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    #event_highlight {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #stall_highlight {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #event_highlight h1,
+    #stall_highlight h1 {
+        /* max-width: 98%;
+        width: 100%;
+        color: #00FFFF;
+        font-family: 'ChopinScript', cursive;
+        margin: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(255, 255, 25, 0.6);
+        background-color: rgba(38, 99, 16, 0.85);
+        text-align: center; */
+        font-size: 20px;
+
+    }
+
+
+    .homepage-reg-btn {
+        display: inline-block;
+        padding: 5px 15px;
+        background: #0077ff;
+        /* blue */
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        /* smooth animation */
+    }
+}
+
+
+/*========== Marthomex and logo =========*/
+
+/* header style */
+#title_marthomex {
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    padding: 10px 0px;
+    margin: 10px;
+
+}
+
+#title_marthomex .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title_marthomex .logo h1 {
+    font-family: 'Monoton', cursive;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    color: rgb(255, 255, 0);
+    letter-spacing: 2px;
+}
+
+#title_marthomex .logo h2 {
+    margin: 0 0 0 0;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: rgb(255, 255, 0);
+
+    letter-spacing: 1.8px;
+    font-family: sans-serif;
+}
+
+#title_marthomex .logo img {
+    width: 10%;
+    height: auto;
+}
+
+
+#title_marthomex .logo .title-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    #title_marthomex .logo h1 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    #title_marthomex .logo h2 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    #title_marthomex .logo img {
+        width: 22%;
+        height: auto;
+    }
+
+
+}

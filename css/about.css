@@ -1,0 +1,123 @@
+#about_us,
+#principal_section {
+    width: 85%;
+}
+
+#about_reg_button {
+    background: red;
+}
+
+#about_reg_button:hover {
+    background: #cc0000;
+}
+
+#about_us h1,
+#principal_section h1 {
+    width: 85%;
+    text-align: justify;
+    width: 100%;
+}
+
+/* Container spacing */
+#about_us .about-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Image styling */
+#about_us .about-image {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: block;
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+
+    section {
+        max-width: 100%;
+        width: 80%;
+    }
+}
+
+/*========== principal message =========*/
+
+
+
+/* Principal section container */
+#principal_section .principal-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 100%;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Circular image */
+#principal_section .principal-photo img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Text area */
+#principal_section .principal-text {
+    flex: 1;
+}
+
+
+#principal_section .principal-text p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+#about #regards {
+    text-align: right;
+    margin-right: 280px;
+}
+
+#about #prof_letha {
+    text-align: right;
+    margin-right: 0px;
+}
+
+#about #general_convenor {
+    text-align: right;
+    margin-right: 30px;
+}
+
+
+
+#signature-wrapper {
+    text-align: right;
+    margin-right: -30px;
+    margin-bottom: -30px;
+    margin-top: -40px;
+}
+
+#signature {
+    width: 250px;
+}
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+    #principal_section .principal-container {
+        flex-direction: column;
+    }
+
+    #principal_section .principal-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #signature {
+        width: 150px;
+    }
+}

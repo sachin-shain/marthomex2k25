@@ -1,0 +1,88 @@
+/* =================================================
+                  Brochure
+   =================================================*/
+
+
+
+/* Brochure Section */
+.brochure-section {
+    text-align: center;
+    padding: 0px 20px;
+    border-radius: 25px;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.sub-text {
+    margin-bottom: 30px;
+}
+
+/* Grid layout */
+.brochure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.brochure-card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.brochure-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.22);
+    border-color: black;
+    transition: 0.25s ease-in-out;
+}
+
+/* Card icon */
+.brochure-card .icon {
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+
+/* Title */
+.brochure-card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Description */
+.brochure-card p {
+    color: #4a6e4a;
+    margin-bottom: 18px;
+}
+
+/* Button */
+.brochure-card button {
+    padding: 10px 22px;
+    border: none;
+    background: #2e7d32;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.brochure-card button:hover {
+    background: #1b5e20;
+    transform: scale(1.07);
+}
+
+
+/* ========= Mobile (max-width: 600px) ========= */
+@media (max-width: 600px) {
+    body#Brochures .brochure-section {
+        width: 90% !important;
+        max-width: 90% !important;
+        margin: 20px auto !important;
+        padding: 0 10px;
+    }
+}

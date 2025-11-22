@@ -1,0 +1,122 @@
+/*========== About us =========*/
+#about_us,
+#principal_section {
+    width: 85%;
+}
+
+#about_us h1,
+#principal_section h1 {
+    width: 85%;
+    text-align: justify;
+    width: 100%;
+}
+
+/* Container spacing */
+#about_us .about-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Image styling */
+#about_us .about-image {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: block;
+}
+
+/* Link styling for MTCW Perumbavoor */
+#about_us .mtcw-link {
+    background: red;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 6px;
+    transition: 0.2s ease;
+    white-space: nowrap;
+    /* prevents breaking into a new line */
+}
+
+#about_us .mtcw-link:hover {
+    background: #cc0000;
+}
+
+/*========== principal message =========*/
+
+
+
+/* Principal section container */
+#principal_section .principal-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 100%;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* Circular image */
+#principal_section .principal-photo img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    /* ensures perfect circular crop */
+    border-radius: 50%;
+    /* makes it circular */
+    border: 4px solid #fff;
+    /* optional white border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Text area */
+#principal_section .principal-text {
+    flex: 1;
+}
+
+
+#principal_section .principal-text p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* #about #regards,
+#about #signature,
+#about #prof_letha,
+#about #general_convenor {
+
+} */
+
+#about #regards {
+    text-align: right;
+    margin-right: 280px;
+}
+
+#about #prof_letha {
+    text-align: right;
+    margin-right: 0px;
+}
+
+#about #general_convenor {
+    text-align: right;
+    margin-right: 30px;
+}
+
+
+
+#signature-wrapper {
+    text-align: right;
+    /* pushes image to right */
+    margin-right: -30px;
+    /* adjust so it visually centers above name */
+    margin-bottom: -30px;
+    /* reduces vertical gap */
+
+    margin-top: -40px;
+}
+
+#signature {
+    width: 250px;
+}
