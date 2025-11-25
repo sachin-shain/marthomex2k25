@@ -51,8 +51,9 @@
     display: inline-block;
 }
 
-#valedictory-image {
-    max-width: 100%;
+#valedictory-image,
+#inauguration_image {
+    max-width: 55%;
     width: 80%;
     height: auto;
 }
@@ -189,7 +190,7 @@
     }
 
     .event-info p {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .event-card {
