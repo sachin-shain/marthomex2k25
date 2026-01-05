@@ -21,6 +21,42 @@
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.event-card2 {
+    display: grid;
+    /* two equal columns */
+    grid-template-columns: 1fr 1fr;
+    /* two rows */
+    grid-template-rows: auto auto;
+    /* optional spacing */
+    gap: 16px;
+    align-items: center;
+    background: #ffffffdd;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 25px auto;
+    width: 85%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.27);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.event-card2 .event-info {
+    grid-column: 1 / 2;
+    padding-right: 20px;
+}
+
+.event-card .event-image2 {
+    grid-column: 2 / 3;
+    padding-right: 20px;
+}
+
+.event-card .winners-info {
+    grid-column: 1 / -1;
+    /* span across both columns */
+    padding-right: 20px;
+}
+
+
+
 
 .event-card-program .event-info {
     width: 100%;
@@ -53,7 +89,7 @@
 
 #valedictory-image,
 #inauguration_image {
-    max-width: 55%;
+    max-width: 95%;
     width: 80%;
     height: auto;
 }

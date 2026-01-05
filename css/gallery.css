@@ -1,0 +1,37 @@
+/* Section */
+.slideshow-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.slideshow-section h2 {
+    font-size: 2rem;
+    color: #004aad;
+}
+
+
+/* Slideshow box */
+.slideshow {
+    max-width: 700px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #111;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.slideshow img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    /* no cropping */
+    background: #f2f2f2;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+
+/* Hidden state */
+.fade-out {
+    opacity: 0;
+}

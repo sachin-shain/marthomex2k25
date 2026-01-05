@@ -1,0 +1,48 @@
+.stalls {
+    width: 80%;
+    background-image: url("../images/stall_background.jpg");
+}
+
+
+.stalls-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: stretch;
+    margin-top: 15px;
+
+    padding: 5px;
+    /* same height */
+}
+
+.stall-container {
+    background: #fbfbf8;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stall h2 {
+    font-size: 1.5rem;
+    color: #0F4D0F;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.stall img {
+    width: 85%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 2px solid #1e632d;
+}
+
+.stall-link {
+    background: #1a8f1b;
+    color: white;
+}
+
+.stall-link:hover {
+    background: #054f2a;
+    color: white;
+}
