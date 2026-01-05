@@ -16,9 +16,6 @@ const stallImages = [
     "images/gallery/stall/6.JPG",
     "images/gallery/stall/math 3.JPG",
     "images/gallery/stall/phy 2.jpeg",
-    "images/gallery/stall/stall1.jpg",
-    "images/gallery/stall/stall2.jpg",
-    "images/gallery/stall/stall3.jpg",
 ];
 
 let eventIndex = 0;
