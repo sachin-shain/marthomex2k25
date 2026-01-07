@@ -279,9 +279,10 @@
 .event .slide img,
 .stall .slide img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border: 4px solid rgb(22, 36, 44);
+    overflow: hidden;
 }
 
 /* Portrait slide — 2 images side-by-side */
